@@ -27,9 +27,20 @@ namespace CustomSocket
             socket.Bind(remoteEP);
         }
 
-        private Socket Accept()
+        public Socket Accept()
         {
             return socket.Accept();
+        }
+
+        public void Connect(IPAddress address, int port)
+        {
+            IPEndPoint endPoint = new IPEndPoint(address, port);
+            socket.Connect(endPoint);
+        }
+
+        public Boolean isConnected()
+        {
+            return socket.Connected;
         }
 
         private Object ReceiveObject()
