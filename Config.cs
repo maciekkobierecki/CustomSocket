@@ -4,10 +4,11 @@ using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
 
 namespace CustomSocket
 {
-    class Config
+    public class Config
     {
         public static String getProperty(String key)
         {
