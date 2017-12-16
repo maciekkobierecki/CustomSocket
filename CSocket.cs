@@ -43,7 +43,7 @@ namespace CustomSocket
             return socket.Connected;
         }
 
-        private Object ReceiveObject()
+        public Tuple<String, Object> ReceiveObject()
         {
             byte[] messageSize = new byte[4];
             socket.Receive(messageSize, 0, 4, SocketFlags.None);
@@ -56,7 +56,9 @@ namespace CustomSocket
                 totalReceived += received;
             } while (totalReceived != inputSize);
             Object ob = GetDeserializedObject(bytes);
-            return ob;
+            Wrapper wrappedReceivedObject = (Wrapper)ob;
+            Tuple<String, Object> tuple = new Tuple<string, object>(wrappedReceivedObject.getFunction(), wrappedReceivedObject.getObject());
+            return tuple;
         }
 
 
@@ -70,9 +72,10 @@ namespace CustomSocket
             return deserialized;
         }
 
-        private void SendObject(Object toSendObject)
+        private void SendObject(String function, Object toSendObject)
         {
-            byte[] serializedObject = GetSerializedObject(toSendObject);
+            Wrapper wrapper = new CustomSocket.Wrapper(function, toSendObject);
+            byte[] serializedObject = GetSerializedObject(wrapper);
             int messageSize = serializedObject.Length;
             byte[] size = BitConverter.GetBytes(messageSize);
             socket.Send(size);
