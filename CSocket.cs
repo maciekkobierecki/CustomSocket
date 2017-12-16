@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace CustomSocket
 {
-    class CustomSocket
+    public class CSocket
     {
         Socket socket;
         
-        public CustomSocket(IPAddress address, int port)
+        public CSocket(IPAddress address, int port)
         {
              InitSocket(address, port);
         }

@@ -50,6 +50,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\Desktop\projekty\TSSTSubnetwork\Subnetwork\Subnetwork\Subnetwork.csproj">
+      <Project>{b24a7980-4d51-4bfb-9762-4e3f5c80e92e}</Project>
+      <Name>Subnetwork</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
