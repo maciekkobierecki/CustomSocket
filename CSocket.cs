@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Runtime.Serialization.Formatters.Binary;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CustomSocket
 {
@@ -14,6 +10,11 @@ namespace CustomSocket
     {
         Socket socket;
         
+        public CSocket()
+        {
+            socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+        }
+
         public CSocket(IPAddress address, int port)
         {
              InitSocket(address, port);
@@ -30,6 +31,11 @@ namespace CustomSocket
         public Socket Accept()
         {
             return socket.Accept();
+        }
+
+        public void Listen()
+        {
+            socket.Listen(0);
         }
 
         public void Connect(IPAddress address, int port)
@@ -72,9 +78,9 @@ namespace CustomSocket
             return deserialized;
         }
 
-        private void SendObject(String function, Object toSendObject)
+        public void SendObject(String function, Object toSendObject)
         {
-            Wrapper wrapper = new CustomSocket.Wrapper(function, toSendObject);
+            Wrapper wrapper = new Wrapper(function, toSendObject);
             byte[] serializedObject = GetSerializedObject(wrapper);
             int messageSize = serializedObject.Length;
             byte[] size = BitConverter.GetBytes(messageSize);

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace CustomSocket
 {
+    [Serializable]
     public class Wrapper
     {
         private String parameter;
