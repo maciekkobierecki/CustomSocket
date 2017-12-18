@@ -9,7 +9,7 @@ namespace CustomSocket
     public class CSocket
     {
         Socket socket;
-        
+
         public CSocket()
         {
             socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
@@ -17,8 +17,9 @@ namespace CustomSocket
 
         public CSocket(IPAddress address, int port)
         {
-             InitSocket(address, port);
+            InitSocket(address, port);
         }
+
 
         private void InitSocket(IPAddress address, int port)
         {
@@ -28,9 +29,14 @@ namespace CustomSocket
             socket.Bind(remoteEP);
         }
 
-        public Socket Accept()
+        public CSocket(Socket socket)
         {
-            return socket.Accept();
+            this.socket = socket;
+        }
+
+        public CSocket Accept()
+        {
+            return new CSocket(socket.Accept());
         }
 
         public void Listen()
