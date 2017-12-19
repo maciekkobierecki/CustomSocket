@@ -8,6 +8,9 @@ namespace CustomSocket
 {
     public class CSocket
     {
+        public const String LISTENING_FUNCTION = "listeningFunction";
+        public const String CONNECT_FUNCTION = "connectFunction";
+
         Socket socket;
 
         public CSocket()
@@ -15,18 +18,22 @@ namespace CustomSocket
             socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
         }
 
-        public CSocket(IPAddress address, int port)
+        public CSocket(IPAddress address, int port, String function)
         {
-            InitSocket(address, port);
+            InitSocket(address, port, function);
         }
 
 
-        private void InitSocket(IPAddress address, int port)
+        private void InitSocket(IPAddress address, int port, String function)
         {
             socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-            IPAddress ipAddr = address;
-            IPEndPoint remoteEP = new IPEndPoint(ipAddr, port);
-            socket.Bind(remoteEP);
+            IPEndPoint remoteEP = new IPEndPoint(address, port);
+            if (function.Equals(LISTENING_FUNCTION))
+                socket.Bind(remoteEP);
+            else if (function.Equals(CONNECT_FUNCTION))
+                socket.Connect(remoteEP);
+            else
+                throw new SocketException();
         }
 
         public CSocket(Socket socket)

@@ -11,3 +11,9 @@ C:\Users\Patryk\Documents\GitHub\customSocket\obj\Debug\CustomSocket.csprojResol
 C:\Users\Patryk\Documents\GitHub\customSocket\obj\Debug\CustomSocket.csproj.CoreCompileInputs.cache
 C:\Users\Patryk\Documents\GitHub\customSocket\obj\Debug\CustomSocket.exe
 C:\Users\Patryk\Documents\GitHub\customSocket\obj\Debug\CustomSocket.pdb
+C:\Users\Maciek\Desktop\projekty2017\customSocket\bin\Debug\CustomSocket.exe.config
+C:\Users\Maciek\Desktop\projekty2017\customSocket\obj\Debug\CustomSocket.exe
+C:\Users\Maciek\Desktop\projekty2017\customSocket\obj\Debug\CustomSocket.pdb
+C:\Users\Maciek\Desktop\projekty2017\customSocket\bin\Debug\CustomSocket.exe
+C:\Users\Maciek\Desktop\projekty2017\customSocket\bin\Debug\CustomSocket.pdb
+C:\Users\Maciek\Desktop\projekty2017\customSocket\obj\Debug\CustomSocket.csprojResolveAssemblyReference.cache
