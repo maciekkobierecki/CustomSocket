@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Config.cs" />
     <Compile Include="CSocket.cs" />
+    <Compile Include="LogClass.cs" />
     <Compile Include="MessageParameters.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
