@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace tsst_client
+namespace CustomSocket
 {
     [Serializable]
     public class MessageParameters
@@ -35,4 +35,5 @@ namespace tsst_client
             return capacity;
         }
     }
+
 }
