@@ -110,6 +110,9 @@ namespace CustomSocket
             return ms.ToArray();
         }
 
-
+        public void Close()
+        {
+            socket.Close();
+        }
     }
 }
