@@ -17,3 +17,10 @@ C:\Users\73773\Documents\Visual Studio 2015\Projects\CustomSocket\CustomSocket\b
 C:\Users\73773\Documents\Visual Studio 2015\Projects\CustomSocket\CustomSocket\obj\Debug\CustomSocket.csprojResolveAssemblyReference.cache
 C:\Users\73773\Documents\Visual Studio 2015\Projects\CustomSocket\CustomSocket\obj\Debug\CustomSocket.exe
 C:\Users\73773\Documents\Visual Studio 2015\Projects\CustomSocket\CustomSocket\obj\Debug\CustomSocket.pdb
+D:\Adrian\Dokumenty\GitHub\TSST_2_etap\customSocket\bin\Debug\CustomSocket.exe.config
+D:\Adrian\Dokumenty\GitHub\TSST_2_etap\customSocket\bin\Debug\CustomSocket.exe
+D:\Adrian\Dokumenty\GitHub\TSST_2_etap\customSocket\bin\Debug\CustomSocket.pdb
+D:\Adrian\Dokumenty\GitHub\TSST_2_etap\customSocket\obj\Debug\CustomSocket.csprojResolveAssemblyReference.cache
+D:\Adrian\Dokumenty\GitHub\TSST_2_etap\customSocket\obj\Debug\CustomSocket.csproj.CoreCompileInputs.cache
+D:\Adrian\Dokumenty\GitHub\TSST_2_etap\customSocket\obj\Debug\CustomSocket.exe
+D:\Adrian\Dokumenty\GitHub\TSST_2_etap\customSocket\obj\Debug\CustomSocket.pdb
