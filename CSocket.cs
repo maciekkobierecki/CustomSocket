@@ -10,7 +10,8 @@ namespace CustomSocket
     {
         public const String LISTENING_FUNCTION = "listeningFunction";
         public const String CONNECT_FUNCTION = "connectFunction";
-
+        public const String ACK_FUNCTION = "ackFunction";
+        public const String NACK_FUNCTION = "nackFunction";
         Socket socket;
 
         public CSocket()
@@ -60,6 +61,16 @@ namespace CustomSocket
         public Boolean isConnected()
         {
             return socket.Connected;
+        }
+
+        public void SendACK()
+        {
+            SendObject(ACK_FUNCTION, new object());
+        }
+
+        public void SendNACK()
+        {
+            SendObject(NACK_FUNCTION, new object());
         }
 
         public Tuple<String, Object> ReceiveObject()

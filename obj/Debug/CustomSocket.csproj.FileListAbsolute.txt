@@ -1,9 +1,3 @@
-c:\users\73773\documents\visual studio 2015\Projects\CustomSocket\CustomSocket\bin\Debug\CustomSocket.exe.config
-c:\users\73773\documents\visual studio 2015\Projects\CustomSocket\CustomSocket\obj\Debug\CustomSocket.csprojResolveAssemblyReference.cache
-C:\Users\73773\Documents\Visual Studio 2015\Projects\CustomSocket\CustomSocket\bin\Debug\CustomSocket.exe
-C:\Users\73773\Documents\Visual Studio 2015\Projects\CustomSocket\CustomSocket\bin\Debug\CustomSocket.pdb
-C:\Users\73773\Documents\Visual Studio 2015\Projects\CustomSocket\CustomSocket\obj\Debug\CustomSocket.exe
-C:\Users\73773\Documents\Visual Studio 2015\Projects\CustomSocket\CustomSocket\obj\Debug\CustomSocket.pdb
 C:\Users\Patryk\Documents\GitHub\customSocket\bin\Debug\CustomSocket.exe.config
 C:\Users\Patryk\Documents\GitHub\customSocket\bin\Debug\CustomSocket.exe
 C:\Users\Patryk\Documents\GitHub\customSocket\bin\Debug\CustomSocket.pdb
@@ -17,3 +11,9 @@ C:\Users\Maciek\Desktop\projekty2017\customSocket\obj\Debug\CustomSocket.pdb
 C:\Users\Maciek\Desktop\projekty2017\customSocket\bin\Debug\CustomSocket.exe
 C:\Users\Maciek\Desktop\projekty2017\customSocket\bin\Debug\CustomSocket.pdb
 C:\Users\Maciek\Desktop\projekty2017\customSocket\obj\Debug\CustomSocket.csprojResolveAssemblyReference.cache
+C:\Users\73773\Documents\Visual Studio 2015\Projects\CustomSocket\CustomSocket\bin\Debug\CustomSocket.exe.config
+C:\Users\73773\Documents\Visual Studio 2015\Projects\CustomSocket\CustomSocket\bin\Debug\CustomSocket.exe
+C:\Users\73773\Documents\Visual Studio 2015\Projects\CustomSocket\CustomSocket\bin\Debug\CustomSocket.pdb
+C:\Users\73773\Documents\Visual Studio 2015\Projects\CustomSocket\CustomSocket\obj\Debug\CustomSocket.csprojResolveAssemblyReference.cache
+C:\Users\73773\Documents\Visual Studio 2015\Projects\CustomSocket\CustomSocket\obj\Debug\CustomSocket.exe
+C:\Users\73773\Documents\Visual Studio 2015\Projects\CustomSocket\CustomSocket\obj\Debug\CustomSocket.pdb
