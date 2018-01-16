@@ -13,6 +13,7 @@ namespace CustomSocket
         public const String ACK_FUNCTION = "ackFunction";
         public const String NACK_FUNCTION = "nackFunction";
         Socket socket;
+        CSocket csocket;
 
         public CSocket()
         {
@@ -44,12 +45,14 @@ namespace CustomSocket
 
         public CSocket Accept()
         {
-            return new CSocket(socket.Accept());
+            Socket created = socket.Accept();
+            csocket= new CSocket(created);
+            return csocket;
         }
 
         public void Listen()
         {
-            socket.Listen(0);
+            socket.Listen(10);
         }
 
         public void Connect(IPAddress address, int port)
