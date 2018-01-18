@@ -10,6 +10,8 @@ namespace CustomSocket
     {
         public static void Log(string s)
         {
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.ForegroundColor = ConsoleColor.Gray;
             Console.WriteLine("{0} | " + s, GetTimeStamp());
         }
 
